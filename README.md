@@ -21,5 +21,20 @@ GPIO.setup(18,GPIO.OUT) # freezer<br>
     GPIO.output(11,0)<br>
     GPIO.output(12,0)<br>
     GPIO.output(13,0)<br>
+</pre>
 
+<pre>
+    if float(array2[5])>-15.0:<br>
+    if ttime <=ctime+1500.0:<br>
+      ssr18="1"<br>
+      GPIO.output(18,1)<br>
+    if ctime+1500<=ttime<=ctime+1800:<br>
+      ssr18="0"<br>
+      GPIO.output(18,0)<br>
+    if ctime+1800<ttime:<br>
+      f18=0<br>
+    else:<br>
+      ssr18="0"<br>
+      GPIO.output(18, 0)<br>
+  GPIO.output(15,1) # pump on<br>
 </pre>
